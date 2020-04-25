@@ -141,7 +141,7 @@ function draw() {
   text(cards[0].pos.join(''),sizeX-5,sizeY-2);
 }
 
-function mousePressed() {
+function touchStarted() {
   let x = mouseX;
   let y = mouseY;
   
