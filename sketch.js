@@ -13,7 +13,7 @@ function setup() {
 }
 
 function draw() {
-  background(130)
+  background(140)
 
   for (var i = 0; i<dots; i++){
     obj[i].draw()
