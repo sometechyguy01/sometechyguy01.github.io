@@ -44,7 +44,7 @@ class Card {
       this.pos = [int(random(0,3)),int(random(0,4)),int(random(0,5))];
       this.me = imgB[this.pos[0]].get(pageX+cardW*this.pos[1],pageY+cardH*this.pos[2],cardW,cardH);
     }
-    if(this.me.get(7,7) == '0,135,0,255') {
+    if(this.me.get(7,7) == '0,135,0,255' || this.me.get(7,7) == '200,200,200,255') {
       this.newCard();
     }
     for (let obj of blacklist) {
