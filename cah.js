@@ -65,7 +65,7 @@ class Card {
       textSize(10);
       fill(255);
       textAlign(BOTTOM,RIGHT);
-      text(this.me.get(7,7),width-10,height-10);
+      text(this.me.get(7,7),width-20,height-10);
     } else {
       stroke(70);
     }
