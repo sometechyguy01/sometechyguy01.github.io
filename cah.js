@@ -18,13 +18,13 @@ let sizeY;
 let canvasY;
 
 function preload(){
-  for(let i=0; i<17;i++){
-    imgW.push(loadImage(['assets/w',i,'.jpg'].join('')));
-    print([i,'processed'].join(' '));
-  }
   for (let i=0;i<3;i++) {
     imgB.push(loadImage(['assets/b',i,'.jpg'].join('')));
   }
+  for(let i=0; i<17;i++){
+    imgW.push(loadImage(['assets/w',i,'.jpg'].join('')));
+    print([i,'processed'].join(' '));
+  } 
 }
 
 class Card {
