@@ -62,6 +62,10 @@ class Card {
     noFill();
     if (this.selected) {
       stroke(255, 204, 0);
+      textSize(10);
+      fill(255);
+      textAlign(BOTTOM,RIGHT);
+      text(this.me.get(7,7),width,height);
     } else {
       stroke(70);
     }
@@ -71,14 +75,11 @@ class Card {
   clicked(x,y){
     if (x>this.corner[0] && x<this.corner[0]+sizeX && y>this.corner[1] && y<this.corner[1]+sizeY) {
       this.selected = !this.selected;
+      
     }
   }
   submit(){
     if (this.selected) {
-      textSize(10);
-      fill(255);
-      textAlign(BOTTOM,RIGHT);
-      text(this.me.get(7,7),width,height);
       this.newCard();
       this.selected = false;
     }
