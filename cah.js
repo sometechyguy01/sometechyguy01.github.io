@@ -62,10 +62,6 @@ class Card {
     
     if (this.selected) {
       stroke(255, 204, 0);
-      textSize(10);
-      fill(255);
-      textAlign(BOTTOM,RIGHT);
-      text(this.me.get(7,7),width-20,height-10);
     } else {
       stroke(70);
     }
