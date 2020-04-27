@@ -75,6 +75,10 @@ class Card {
   }
   submit(){
     if (this.selected) {
+      textSize(10);
+      fill(255);
+      textAlign(BOTTOM,RIGHT);
+      text(this.me.get(7,7),width,height);
       this.newCard();
       this.selected = false;
     }
