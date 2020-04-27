@@ -59,16 +59,17 @@ class Card {
   }
   render() {
     image(this.me,this.corner[0],this.corner[1],sizeX,sizeY);
-    noFill();
+    
     if (this.selected) {
       stroke(255, 204, 0);
       textSize(10);
       fill(255);
       textAlign(BOTTOM,RIGHT);
-      text(this.me.get(7,7),width,height);
+      text(this.me.get(7,7),width-10,height-10);
     } else {
       stroke(70);
     }
+    noFill();
     strokeWeight(4);
     rect(this.corner[0],this.corner[1],sizeX,sizeY);
   }
